@@ -38,7 +38,7 @@ export default function Portfolio(){
                     {
                         list.map((e, i) => {
                             return (
-                                <div className={`flex flex-col w-full border border-gray-300 text-center mb-10 box-border`}>
+                                <div key={i} className={`flex flex-col w-full border border-gray-300 text-center mb-10 box-border`}>
                                     <div className={`w-full aspect-w-3 aspect-h-2 bg-cover bg-center cursor-pointer order-${(i % 2 === 0 ? '2' : '1')}`} style={{ backgroundImage: `url(${e.img})` }} />
                                     <div className={`p-10 order-${(i % 2 === 0 ? '1' : '2')} m-10 auto`}>
                                         <h3 className="mb-6">{e.title}</h3>
